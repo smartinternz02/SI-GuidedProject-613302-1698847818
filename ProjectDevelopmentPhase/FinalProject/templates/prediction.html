@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLender</title>
+    <style>
+        body{
+            background-color: rgb(184, 234, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            background-color: rgb(24, 112, 134);
+            margin-top: 30px;
+            width:fit-content;
+            margin-left: 30%;
+            margin-right: 30%; 
+            border: 1px solid;
+            padding: 10px;
+        
+        }
+        input[type='text'],input[type="password"], input[type="number"],textarea{
+            font-size: large;
+            display: flex;
+            width:90%;
+            border-radius: 3px;
+            border-width: 0;
+            padding: 7px;
+        }
+        label{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        select{
+            border-radius: 3px;
+            padding: 7px;
+            width:50%;
+        }
+        table{
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 50vw;
+            height: 60vh;
+        
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border-width: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action='/predict' method='POST'>
+        <div>
+            <center>
+                <caption>
+                    <h1 style="color:white;">Loan Approval Credibility Prediction</h1>
+                </caption>
+            </center>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td><select name="gender">
+                            <option value="options" selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="married">Marriage:</label>
+                    </td>
+                    <td><select name="married">
+                            <option value="options" selected>Married or Not</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dependents">Dependents:</label>
+                    </td>
+                    <td><select name="dependents">
+                            <option value="options" selected>No. of dependents</option>
+                            <option value="1">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3+">3+</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="education">Education:</label>
+                    </td>
+                    <td><select name="education">
+                            <option value="options" selected>Select education</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="notGraduate">Not Graduate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="employed">Self-Employed:</label>
+                    </td>
+                    <td><select name="employed">
+                            <option value="options" selected>Self-Employed or Not</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ApplicantIncome">Applicant Income:</label></td>
+                    <td><input type="number" name="ApplicantIncome"></td>
+                </tr>
+                <tr>
+                    <td><label for="CoapplicantIncome">Co-Applicant Income:</label></td>
+                    <td><input type="number" name="CoapplicantIncome"></td>
+                </tr>
+                <tr>
+                    <td><label for="LoanAmount">Loan Amount:</label></td>
+                    <td><input type="number" name="LoanAmount"></td>
+                </tr>
+                <tr>
+                    <td><label for="loan_Amount_Term">Loan Amount Term:</label></td>
+                    <td><input type="number" name="loan_Amount_Term"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="credit">Credit History:</label>
+                    </td>
+                    <td><select name="credit">
+                            <option value="options" selected>Credit History</option>
+                            <option value="1">0: Not Paid Debts</option>
+                            <option value="2">1: All Debts Paid</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="proparea">Property Area:</label>
+                    </td>
+                    <td><select name="proparea">
+                            <option value="options" selected>Property Area</option>
+                            <option value="rural">Rural</option>
+                            <option value="semiurban">Semiurban</option>
+                            <option value="urban">Urban</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <tr>
+                <td><button type="submit"><b>Predict</b></button></td>
+            </tr>
+        </div>
+    </form>
+    
+
+</body>
+
+</html>
+
+
+
+
+ 
