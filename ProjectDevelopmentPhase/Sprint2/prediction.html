@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLender</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <center>
+                <caption>
+                    <h1 style="color:white;">Loan Approval Credibility Prediction</h1>
+                </caption>
+            </center>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td><select name="gender">
+                            <option value="options" selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="married">Marriage:</label>
+                    </td>
+                    <td><select name="married">
+                            <option value="options" selected>Married or Not</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dependents">Dependents:</label>
+                    </td>
+                    <td><select name="dependents">
+                            <option value="options" selected>No. of dependents</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3+">3+</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="education">Education:</label>
+                    </td>
+                    <td><select name="education">
+                            <option value="options" selected>Select education</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="notGraduate">Not Graduate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="employed">Self-Employed:</label>
+                    </td>
+                    <td><select name="employed">
+                            <option value="options" selected>Self-Employed or Not</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ApplicantIncome">Applicant Income:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="CoapplicantIncome">Co-Applicant Income:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="LoanAmount">Loan Amount:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for="loan_Amount_Term">Loan Amount Term:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="credit">Credit History:</label>
+                    </td>
+                    <td><select name="credit">
+                            <option value="options" selected>Credit History</option>
+                            <option value="1">0: Not Paid Debts</option>
+                            <option value="2">1: All Debts Paid</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="proparea">Property Area:</label>
+                    </td>
+                    <td><select name="proparea">
+                            <option value="options" selected>Property Area</option>
+                            <option value="rural">Rural</option>
+                            <option value="semiurban">Semiurban</option>
+                            <option value="urban">Urban</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <tr>
+                <td><button type="submit"><b>Predict</b></button></td>
+            </tr>
+        </div>
+    </form>
+    
+
+</body>
+
+</html>
